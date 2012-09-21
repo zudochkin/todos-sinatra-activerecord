@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Todos with Sinatra and ActiveRecord</title>
+  </head>
+
+  <body>
+    <form action="/todos" method="post">
+      <input type="text" name="todo[name]">
+
+      <input type="submit" value="DoIt!">
+    </form>
+
+    <%= yield %>
+  </body>
+</html>

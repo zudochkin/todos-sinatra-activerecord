@@ -12,6 +12,11 @@ get '/todos' do
   erb :index
 end
 
+post '/todos' do
+  @todo = Todo.create(:name => params[:todo][:name])
+  redirect '/todos'
+end
+
 
 
 
