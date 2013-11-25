@@ -1,0 +1,9 @@
+h1 Todos
+- @todos.each do |todo|
+  form action="/todos/#{todo.id}/toggle" method="POST"
+    input type="submit" value="Toggle"
+  p
+    | Complited:
+    strong= todo.complited_at
+    = todo.name
+
